@@ -1,0 +1,19 @@
+-- 1 query, create database
+CREATE DATABASE testovoe_db;
+
+-- 2 query, create table in this db
+
+use testovoe_db;
+
+CREATE TABLE `Products` (
+ ID INT NOT NULL auto_increment PRIMARY KEY,
+ PRODUCT_ID INT NOT NULL ,
+ PRODUCT_NAME VARCHAR(120) NOT NULL,
+ PRODUCT_PRICE INT NOT NULL,
+ PRODUCT_ARTICLE INT NOT NULL,
+ PRODUCT_QUANTITY INT NOT NULL DEFAULT(0),
+ DATE_CREATE DATE NOT NULL,
+ IS_HIDDEN BOOLEAN NOT NULL DEFAULT(false)
+);
+
+-- 3 query,
